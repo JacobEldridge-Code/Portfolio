@@ -36,7 +36,10 @@ header {
 .name {
     margin-left: 40px;
     color: var(--white-color);
+    font-weight: bold;
     transition: 0.25s ease-in-out;
+    animation: fade-in-left 1.0s ease-in 1.6s forwards;
+    opacity: 0;
 }
 
 .name:hover {
@@ -51,7 +54,10 @@ header {
 
 .header-right a {
     color: var(--white-color);
+    font-weight: bold;
     transition: 0.25s ease-in-out;
+    animation: fade-in-right 1.0s ease-in 1.6s forwards;
+    opacity: 0;
 }
 
 .header-right a:hover {
@@ -60,6 +66,8 @@ header {
 
 #hero {
     position: relative;
+    display: flex;
+    justify-content: space-evenly;
     color: var(--white-color);
     background-image: linear-gradient(#0E3E5C, #0D1A22 );
     height: 100vh;
@@ -71,12 +79,14 @@ header {
     position: absolute;
     top: 50%;
     left: 20%;
-    transform: translate(-50%,-50%);
+    transform: translate(-20%,-50%);
+    animation: landing-page-left 1.5s ease-in forwards;
+    opacity: 0;
 }
 
 .hero-left h1 {
     font-size: 4.8rem;
-    line-height: 1.2;
+    line-height: 1.3;
     text-shadow: var(--text-shadow);
 }
 
@@ -90,8 +100,8 @@ span img {
 
 .hero-left p {
     margin-top: 20px;
-    font-size: 1.2rem;
-    line-height: 2.0;
+    font-size: 1.4rem;
+    line-height: 2.2;
 }
 
 .hero-right {
@@ -102,6 +112,8 @@ span img {
     top: 51%;
     left: 55%;
     transform: translate(-50%,-50%);
+    animation: landing-page-right 1.5s ease-in forwards;
+    opacity: 0;
 }
 
 .hero-right img {
@@ -111,14 +123,11 @@ span img {
 
 .hero-right h2 {
     position: absolute;
-    right: 28%;
+    right: 26%;
     font-size: 3.7rem;
     color: #D2042D;
     letter-spacing: 6px;
 }
-
-
-
 
 
 /* Section 2 Project section*/
@@ -135,7 +144,7 @@ span img {
     flex-direction: column;
     position: absolute;
     top: 50%;
-    left: 28%;
+    left: 30%;
     transform: translate(-50%,-50%);
     z-index: 2;
 }
@@ -319,17 +328,18 @@ span img {
     top: 55%;
     right: 12%;
     transform: translate(-50%,-50%);
-    gap: 25px;
+    gap: 30px;
     margin-top: 15px;
 }
 
 .contact-form input {
-    padding: 15px 15px;
+    padding: 20px 15px;
     border-radius: 5px;
     border: 1px solid var(--dimgray-color);
     font-size: 14px;
     font-weight: bold;
     color: var(--dimgray-color);
+    width: 420px;
 }
 
 .contact-form textarea {
@@ -338,8 +348,8 @@ span img {
     border: 1px solid var(--dimgray-color);
     max-height: 200px;
     min-height: 100px;
-    max-width: 380px;
-    min-width: 380px;
+    max-width: 420px;
+    min-width: 420px;
     font-size: 14px;
     font-weight: bold;
     color: var(--dimgray-color);
@@ -364,7 +374,57 @@ span img {
 }
 
 
+/* animations */
 
+@keyframes fade-in-left {
+    0% {
+       transform: translateX(-100%);
+       opacity: 0;
+    }
+    75% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+     }
+     75% {
+        opacity: 0.3;
+    }
+     100% {
+         transform: translateX(0%);
+         opacity: 1;
+     }
+}
+
+@keyframes landing-page-left {
+    0% {
+        transform: translate(-20%, -150%); /* Adjusted to match initial position */
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-20%, -50%); /* Matched with initial position */
+        opacity: 1;
+    }
+}
+
+@keyframes landing-page-right {
+    0% {
+        transform: translate(-20%, -150%); /* Adjusted to match initial position */
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-20%, -50%); /* Matched with initial position */
+        opacity: 1;
+    }
+}
 
 
 
@@ -388,7 +448,7 @@ span img {
     }
     .hero-left {
         top: 50%;
-        left: 40%;
+        left: 20%;
         transform: translate(-50%,-50%);
     }
     .hero-left h1 {
@@ -404,15 +464,15 @@ span img {
         margin-left: 30px;
     }
     .hero-right {
-        top: 58.5%;
-        left: 68%;
+        top: 58%;
+        left: 48%;
         transform: translate(-50%,-50%);
     }
     .hero-right h2 {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
         position: absolute;
-        right: 15%;
-        top: 41%;
+        right: 20%;
+        top: 42%;
     }
     .hero-right img {
         width: 160px;
@@ -530,30 +590,29 @@ span img {
         letter-spacing: 0px;
     }
 
-    .line1 {
-        width: 99%;
-    }
-
-    .contact-left > span:nth-child(3) img{
-        display: none;  
+    .contact-left img {
+        display: none;
     }
 
     .contact-form {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: absolute;
-        top: 73%;
-        left: 40%;
+        top: 67%;
+        left: 50%;
         transform: translate(-50%,-50%);
         z-index: 1;
         gap: 20px;
+        width: 100%;
     }
 
     .contact-form input {
         padding: 15px 15px;
         border-radius: 5px;
         border: 1px solid var(--dimgray-color);
-        width: 270px;
+        width: 293px;
     }
 
     .contact-form textarea {
@@ -562,8 +621,8 @@ span img {
         border: 1px solid var(--dimgray-color);
         max-height: 150px;
         min-height: 100px;
-        max-width: 270px;
-        min-width: 270px;
+        max-width: 293px;
+        min-width: 293px;
     }
 
     .form-btn {
@@ -578,7 +637,7 @@ span img {
         transition: 0.2s ease-in-out;
         letter-spacing: 1px;
         border: 1px solid var(--dimgray-color);
-        width: 270px;
+        width: 293px;
     }
 
 
@@ -603,7 +662,7 @@ span img {
     }
     .hero-left {
         top: 50%;
-        left: 26%;
+        left: 22%;
         transform: translate(-50%,-50%);
     }
     .hero-left h1 {
@@ -619,8 +678,8 @@ span img {
         font-size: 1.3rem;
     }
     .hero-right {
-        top: 52%;
-        left: 80%;
+        top: 55%;
+        left: 55%;
         transform: translate(-50%,-50%);
         
     }
