@@ -7,7 +7,16 @@ hamMenu.addEventListener('click' , () => {
     hamMenu.classList.toggle('active');
 });
 
-document.querySelectorAll('.ham-menu').forEach(n => n.addEventListener('click', () => {
-    hamMenu.classList.remove('active');
+function closeMenu ()  {
+    let navBar = document.querySelector('.header-right');
     navBar.classList.remove('active');
-}));
+    hamMenu.classList.remove('active');
+}
+
+const links = document.querySelectorAll('.header-right .link');
+
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        closeMenu(); 
+    });
+});

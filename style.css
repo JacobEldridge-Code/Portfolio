@@ -59,9 +59,6 @@
     color: var(--dimgray-color);
 }
 
-.header.active {
-
-}
 
 .ham-menu {
     height: 40px;
@@ -791,9 +788,15 @@ footer button:hover {
        display: flex;
        height: 100vh;
        top: 70px;
+       z-index: 10000;
     }
 
     .header-right a {
+        color: var(--white-color);
+        font-weight: bold;
+        transition: 0.25s ease-in-out;
+        animation: fade-in-right 0.5s ease-in 0.2s forwards;
+        opacity: 0;
         font-size: 36px;
     }
 
@@ -882,7 +885,7 @@ footer button:hover {
         font-size: 14px;
         transition: 0.2s ease-in-out;
         border: 1px solid red;
-        margin-left: 100px;
+        margin-left: 70px;
     }
     
     .section2-right {
