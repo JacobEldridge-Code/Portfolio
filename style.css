@@ -712,49 +712,6 @@ footer button:hover {
 }
 
 
-
-
-/* animations */
-
-@keyframes fade-in-left {
-    0% {
-       transform: translateX(-100%);
-       opacity: 0;
-    }
-    75% {
-        opacity: 0.3;
-    }
-    100% {
-        transform: translateX(0%);
-        opacity: 1;
-    }
-}
-
-@keyframes fade-in-right {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-     }
-     75% {
-        opacity: 0.3;
-    }
-     100% {
-         transform: translateX(0%);
-         opacity: 1;
-     }
-}
-
-@keyframes landing-page-left {
-  
-}
-
-@keyframes landing-page-right {
-   
-}
-
-
-
-
 /* iphone 12+ and samsung 12+  Sorry those with phones before 2018!! */
 
 @media screen and (max-width: 730px) {
@@ -764,6 +721,7 @@ footer button:hover {
     .name {
         margin-left: 20px;
         font-size: 18px;
+        z-index: 1001;
     }
 
     .header-right {
@@ -787,8 +745,10 @@ footer button:hover {
     .header-right.active {
        display: flex;
        height: 100vh;
-       top: 70px;
-       z-index: 10000;
+       top: 0px;
+       gap: 30px;
+       padding-top: 70%;
+       z-index: 1000;
     }
 
     .header-right a {
@@ -803,6 +763,7 @@ footer button:hover {
     .ham-menu {
         display: block;
         margin-right: 25px;
+        z-index: 1001;
     }
     
     .ham-menu span {
@@ -1725,7 +1686,60 @@ footer button:hover {
         background-color: #003c32;
         color: var(--white-color);
     }
+ 
+}
 
 
-    
+/* animations */
+
+@keyframes fade-in-left {
+    0% {
+       transform: translateX(-100%);
+       opacity: 0;
+    }
+    75% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+     }
+     75% {
+        opacity: 0.3;
+    }
+     100% {
+         transform: translateX(0%);
+         opacity: 1;
+     }
+}
+
+@keyframes landing-page-left {
+  
+}
+
+@keyframes landing-page-right {
+   
+}
+
+/* custom scrollbar */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(70, 130, 180);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--white-color);
+    border-radius: 15px;
+    border: 1px solid rgb(70, 130, 180);;
 }
