@@ -14,6 +14,15 @@
     --text-shadow: 0 3px 10px rgba(2, 11, 22, 0.5);
 }
 
+.hidden {
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+}
+
+.reveal {
+    opacity: 1; 
+}
+
 .index-header {
     position: fixed;
     top: 0;
@@ -699,8 +708,8 @@ footer button {
     font-size: 0.8rem;  
     letter-spacing: 2px;  
     cursor: pointer;
-    transition: 0.3s ease-in-out;
-    background-color: #003c32;
+    transition: 0.2s ease-in-out;
+    background-color: #003c329e;
     color: var(--white-color);
 }
 
@@ -1727,6 +1736,9 @@ footer button:hover {
 @keyframes landing-page-right {
    
 }
+
+
+
 
 /* custom scrollbar */
 
