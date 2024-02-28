@@ -825,11 +825,11 @@ footer button:hover {
     .hero-right h2 {
         font-size: 1.5rem;
         position: absolute;
-        right: 21%;
+        right: 20%;
         top: 39%;
     }
     .hero-right img {
-        width: 160px;
+        width: 180px;
     }
 
     #section2 {
@@ -1026,6 +1026,7 @@ footer button:hover {
         justify-content: center;
         align-items: center;
         height: 100vh;
+        margin-top: 30px;
     }
     .story-left {
         position: relative;
@@ -1092,7 +1093,7 @@ footer button:hover {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 90px;
+        margin-top: 110px;
     }
     
     .loading-bar {
@@ -1141,6 +1142,7 @@ footer button:hover {
         justify-content: center;
         align-items: center;
         gap: 30px;
+        margin-top: 80px;
     }
     
     .card-container {
@@ -1154,6 +1156,7 @@ footer button:hover {
         border: 1px solid rgba(255, 255, 255, 0.125);  
         padding: 40px;  
         gap: 25px;
+
     }
     
     .card-wrapper {
@@ -1204,7 +1207,8 @@ footer button:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+        margin-top: 80px;
         gap: 25px;
     }
     
