@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded' , () => {
             }
         })
     },{
-        threshold: 0.32,
+        threshold: 0.35,
         rootMargin:'0px'
     })
     let hiddenElements = document.querySelectorAll('.hidden') 

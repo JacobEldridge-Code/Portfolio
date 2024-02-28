@@ -736,8 +736,8 @@ footer button:hover {
         padding-top: 20px;
     }
     .name {
-        margin-left: 20px;
-        font-size: 16px;
+        margin-left: 15px;
+        font-size: 14px;
         z-index: 1001;
     }
 
@@ -823,9 +823,9 @@ footer button:hover {
         transform: translate(-50%,-50%);
     }
     .hero-right h2 {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         position: absolute;
-        right: 19%;
+        right: 21%;
         top: 39%;
     }
     .hero-right img {
@@ -833,14 +833,14 @@ footer button:hover {
     }
 
     #section2 {
-        height: 110vh;
+        height: 120vh;
     }
 
     .section2-left {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 72%;
+        top: 77%;
         left: 42%;
         transform: translate(-50%,-50%);
         z-index: 2;
@@ -886,7 +886,7 @@ footer button:hover {
     }
 
     #section3 {
-        height: 110vh;
+        height: 120vh;
     }
 
 
@@ -894,10 +894,11 @@ footer button:hover {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 72%;
+        top: 77%;
         left: 41%;
         transform: translate(-50%,-50%);
         z-index: 2;
+        border: 1px solid red;
     }
     .section3-left h1 {
         font-size: 2.6rem;
@@ -936,7 +937,7 @@ footer button:hover {
     }
 
     #contact {
-        height: 110vh;
+        height: 120vh;
     }
 
     .contact-left {
@@ -1404,7 +1405,7 @@ footer button:hover {
         position: relative;
         color: var(--white-color);
         background-image: linear-gradient(  #0D1A22, #1E3A4C);
-        height: 100vh;
+        height: 110vh;
     }
     
     .contact-left {
@@ -1460,7 +1461,7 @@ footer button:hover {
         padding: 20px 15px;
         border-radius: 5px;
         border: 1px solid var(--dimgray-color);
-        width: 300px;
+        width: 280px;
     }
 
     .contact-form textarea {
@@ -1468,8 +1469,8 @@ footer button:hover {
         border-radius: 5px;
         max-height: 200px;
         min-height: 100px;
-        max-width: 300px;
-        min-width: 300px;
+        max-width: 280px;
+        min-width: 280px;
     }
 
     .form-btn {
@@ -1478,7 +1479,7 @@ footer button:hover {
         background-color: #DE3163;
         padding: 20px 20px;
         font-size: 18px;
-        width: 300px;
+        width: 280px;
     }
 
     /* media query for about me html document */ 
