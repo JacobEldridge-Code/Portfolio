@@ -1025,8 +1025,9 @@ footer button:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-        margin-top: 30px;
+        height: 120vh;
+        margin-top: 70px;
+        border: 1px solid red;
     }
     .story-left {
         position: relative;
@@ -1093,7 +1094,7 @@ footer button:hover {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 110px;
+        margin-top: 130px;
     }
     
     .loading-bar {
@@ -1136,13 +1137,13 @@ footer button:hover {
     }
       
     .card-section {
-        height: 230vh;
+        height: 260vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 30px;
-        margin-top: 80px;
+        margin-top: 100px;
     }
     
     .card-container {
@@ -1208,7 +1209,6 @@ footer button:hover {
         justify-content: center;
         align-items: center;
         margin-bottom: 50px;
-        margin-top: 80px;
         gap: 25px;
     }
     
