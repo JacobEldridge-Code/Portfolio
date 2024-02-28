@@ -39,7 +39,7 @@
         </div>
         <div class="hero-right hidden">
             <h2>PORTFOLIO</h2>
-            <img src="/assets/dc079515-475c-41ad-b5f8-73b89ba354fd.svg" alt="jupiter art">
+            <img src="/assets/dc079515-475c-41ad-b5f8-73b89ba354fd.svg" alt="jupiter art" loading="lazy">
         </div>
 
     </main>
@@ -53,7 +53,7 @@
             <a href="https://travaa.com/" target="_blank"><button class="section2-btn">Show me more</button></a>
         </div>
         <div class="section2-right hidden">
-            <img src="/assets/tianshu-liu-aqZ3UAjs_M4-unsplash.jpg" alt="">
+            <img src="/assets/tianshu-liu-aqZ3UAjs_M4-unsplash.jpg" alt="japan image" loading="lazy">
             <h6>01</h6>
         </div>
     </section>
@@ -67,7 +67,7 @@
             <a href="about.html" target="_blank"><button class="section2-btn">Show me more</button></a>
         </div>
         <div class="section3-right hidden">
-            <img src="/assets/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg" alt="">
+            <img src="/assets/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg" alt="" loading="lazy">
             <h6>02</h6>
         </div>
     </section>
@@ -75,9 +75,9 @@
     <section id="contact">
         <div class="contact-left hidden">
             <h1>Get In Touch</h1>
-            <span><img class="line1" src="/assets/Red-Line-PNG-Image.png" alt="red line"></span>
-            <span><img class="line-2" src="/assets/Red-Line-PNG-Image.png" alt="red line"></span>
-            <a href="">jeldridge02@fisher.edu</a>
+            <span><img class="line1" src="/assets/Red-Line-PNG-Image.png" alt="red line" loading="lazy"></span>
+            <span><img class="line-2" src="/assets/Red-Line-PNG-Image.png" alt="red line" loading="lazy"></span>
+            <small class="myEmail">jeldridge02@fisher.edu</small>
 
             <div class="contact-icons hidden">
                 <a href="https://twitter.com/Druxyyy" target="_blank"><i class="fa-brands fa-twitter"></i></a>
@@ -87,15 +87,13 @@
 
         <div class="container">
             <form id="form" class="contact-form hidden">
-                <input type="text" name="first-name" placeholder="First Name" required>
-                <input type="text" name="last-name" placeholder="Last Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" id="user_name" name="user_name" placeholder="Name" required>
+                <input type="email" id="user_email" name="user_email" placeholder="Email Address" required>
                 <textarea name="message" id="message" rows="5" placeholder="Type your message here"  required></textarea>
                 <button id="button" class="form-btn">Send Message</button>
             </form>
 
-            <script type="text/javascript"
-          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
       
         <script type="text/javascript">
           emailjs.init('y296eMeKNjNJl0f03')

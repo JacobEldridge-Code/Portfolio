@@ -331,6 +331,15 @@ span img {
     letter-spacing: 5px;
 }
 
+.contact-left small {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    margin-top: 10px;
+    color: var(--white-color);
+    transition: 0.15s ease-in-out;
+}
+
 .contact-left a {
     font-size: 1.6rem;
     letter-spacing: 2px;
@@ -372,10 +381,9 @@ span img {
     position: absolute;
     justify-content: center;
     top: 55%;
-    right: 12%;
+    right: 5%;
     transform: translate(-50%,-50%);
     gap: 30px;
-    margin-top: 15px;
 }
 
 .contact-form input {
@@ -729,7 +737,7 @@ footer button:hover {
     }
     .name {
         margin-left: 20px;
-        font-size: 18px;
+        font-size: 16px;
         z-index: 1001;
     }
 
@@ -755,8 +763,8 @@ footer button:hover {
        display: flex;
        height: 100vh;
        top: 0px;
-       gap: 30px;
-       padding-top: 70%;
+       gap: 35px;
+       padding-top: 50%;
        z-index: 1000;
     }
 
@@ -771,7 +779,7 @@ footer button:hover {
 
     .ham-menu {
         display: block;
-        margin-right: 25px;
+        margin-right: 15px;
         z-index: 1001;
     }
     
@@ -811,17 +819,21 @@ footer button:hover {
     }
     .hero-right {
         top: 60%;
-        left: 60%;
+        left: 65%;
         transform: translate(-50%,-50%);
     }
     .hero-right h2 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         position: absolute;
-        right: 20%;
-        top: 42%;
+        right: 19%;
+        top: 39%;
     }
     .hero-right img {
         width: 160px;
+    }
+
+    #section2 {
+        height: 110vh;
     }
 
     .section2-left {
@@ -834,20 +846,20 @@ footer button:hover {
         z-index: 2;
     }
     .section2-left h1 {
-        font-size: 2.2rem;
+        font-size: 2.0rem;
         line-height: 1.1;
         text-shadow: var(--text-shadow);
         letter-spacing: 1px;
     }
     .section2-left p {
         font-size: 1rem;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
     .section2-btn {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 40px;
+        margin-top: 30px;
         color: var(--white-color);
         font-weight: bolder;
         background-color: #DE3163;
@@ -866,11 +878,15 @@ footer button:hover {
         z-index: 1;
     }
     .section2-right img {
-        width: 330px;
+        width: 320px;
         aspect-ratio: 1 / 1.4;
     }
     .section2-right h6 {
         display: none;
+    }
+
+    #section3 {
+        height: 110vh;
     }
 
 
@@ -890,12 +906,12 @@ footer button:hover {
         letter-spacing: 5px;
     }
     .section3-left p {
-        font-size: 1rem;
-        letter-spacing: 2px;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
     }
     .section3-btn {
         display: flex;
-        margin-top: 40px;
+        margin-top: 30px;
         color: var(--white-color);
         font-weight: bolder;
         background-color: #DE3163;
@@ -912,11 +928,15 @@ footer button:hover {
         z-index: 1;
     }
     .section3-right img {
-        width: 330px;
+        width: 320px;
         aspect-ratio: 1 / 1.4;
     }
     .section3-right h6 {
         display: none;
+    }
+
+    #contact {
+        height: 110vh;
     }
 
     .contact-left {
@@ -928,12 +948,18 @@ footer button:hover {
         top: 28%;
         left: 50%;
         transform: translate(-50%,-50%);
+        width: 100%;
+        gap: 10px;
     }
     .contact-left h1 {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
         line-height: 1.2;
         text-shadow: var(--text-shadow);
         letter-spacing: 0px;
+    }
+
+    .myEmail {
+        font-size: 16px;
     }
 
     .contact-left img {
@@ -950,7 +976,7 @@ footer button:hover {
         left: 50%;
         transform: translate(-50%,-50%);
         z-index: 1;
-        gap: 20px;
+        gap: 25px;
         width: 100%;
     }
 
