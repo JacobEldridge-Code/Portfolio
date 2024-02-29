@@ -1093,7 +1093,7 @@ footer button:hover {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 100px;
+        margin-top: 50px;
     }
     
     .loading-bar {
@@ -1128,7 +1128,7 @@ footer button:hover {
         align-items: center;
         margin-top: 100px;
         font-size: 28px;
-        letter-spacing: 10px;
+        letter-spacing: 5px;
         color: #aaf0d1;
         cursor: pointer;
         transition: 0.4s ease-in-out;
@@ -1142,7 +1142,7 @@ footer button:hover {
         justify-content: center;
         align-items: center;
         gap: 30px;
-        margin-top: 60px;
+        margin-top: 40px;
     }
     
     .card-container {
@@ -1156,7 +1156,6 @@ footer button:hover {
         border: 1px solid rgba(255, 255, 255, 0.125);  
         padding: 40px;  
         gap: 25px;
-
     }
     
     .card-wrapper {
