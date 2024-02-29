@@ -203,9 +203,10 @@ span img {
 }
 
 .section2-left p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     letter-spacing: 2px;
     margin-top: 20px;
+    line-height: 1.5;
 }
 
 .section2-btn {
@@ -823,17 +824,17 @@ footer button:hover {
         transform: translate(-50%,-50%);
     }
     .hero-right h2 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         position: absolute;
-        right: 21%;
-        top: 40%;
+        right: 23%;
+        top: 41%;
     }
     .hero-right img {
         width: 180px;
     }
 
     #section2 {
-        height: 120vh;
+        height: 110vh;
     }
 
     .section2-left {
@@ -885,7 +886,7 @@ footer button:hover {
     }
 
     #section3 {
-        height: 120vh;
+        height: 110vh;
     }
 
 
@@ -935,7 +936,7 @@ footer button:hover {
     }
 
     #contact {
-        height: 120vh;
+        height: 110vh;
     }
 
     .contact-left {
