@@ -894,7 +894,7 @@ footer button:hover {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 75%;
+        top: 76%;
         left: 41%;
         transform: translate(-50%,-50%);
         z-index: 2;
