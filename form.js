@@ -40,3 +40,4 @@ document.getElementById('form').addEventListener('submit', function(event) {
       console.error("Failed to send message:", err);
     });
 });
+

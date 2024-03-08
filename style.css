@@ -171,7 +171,7 @@ span img {
 .hero-right img {
     margin-left: 160px;
     width: 580px;
-    animation: right-side-img 0.75s ease-in forwards;
+    animation: right-side-img 0.9s ease-in forwards;
     opacity: 0;
 }
 
@@ -181,7 +181,7 @@ span img {
     font-size: 3.9rem;
     color: #D2042D;
     letter-spacing: 5px;
-    animation: right-side-h2 2s ease-in .6s forwards;
+    animation: right-side-h2 2s ease-in .9s forwards;
     opacity: 0;
     z-index: 10;
 }
@@ -471,8 +471,8 @@ body {
     color: #aaf0d1;
     cursor: pointer;
     transition: 0.5s ease-in-out;
-    opacity: 100%;
-    animation: header-top 0.8s ease-in forwards;
+    animation: header-top 2s ease-in forwards;
+    opacity: 0;
 }
 
 #about-header h1:hover {
@@ -504,6 +504,8 @@ body {
     color: #aaf0d1;
     cursor: pointer;
     transition: .4s ease-in-out;
+    animation: story-left .6s ease-in 0.6s forwards;
+    opacity: 0;
 }
 
 .story-left h2:hover {
@@ -533,6 +535,8 @@ p::selection {
     cursor: pointer;
     transition: .4s ease-in-out;
     padding: 20px;
+    animation: story-right .6s ease-in 0.6s forwards;
+    opacity: 0;
 }
 
 .story-right h2:hover {
@@ -1851,17 +1855,33 @@ footer button:hover {
 
 @keyframes header-top {
     0% {
-        transform: translateY(-500%);
         opacity: 0;
      }
-     50% {
-        transform: translateY(-250%);
-        opacity: 0.2;
-     }
      100% {
-         transform: translateY(0%);
          opacity: 1;
      }
+}
+
+@keyframes story-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-300%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes story-right {
+    0% {
+        opacity: 0;
+        transform: translateX(300%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
 
 
